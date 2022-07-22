@@ -1,0 +1,7 @@
+<div class="header" style="display: flex">
+    <input style="width: 300px;" type="text" [(ngModel)]="titulo" placeholder="Digite sua tarefa">
+    <input type="text" [(ngModel)]="desc" placeholder="Digite Decrição">
+    <input type="date" [(ngModel)]="data">
+    <button type="submit" (click)="addtask({titulo:titulo, desc:desc, data:data, id:1})">Criar Tarefa</button>
+</div>
+<tasks [array]="tarefas"></tasks>

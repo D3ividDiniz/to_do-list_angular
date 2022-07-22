@@ -1,0 +1,12 @@
+<div id="body">
+
+<tr class="tarefa" *ngFor="let tarefa of array, let i = index">
+    <div class="box_under" id="box-{{i}}" (click)="feito(i)">Marcar como Feito</div>
+    <td class="id">{{tarefa.id}}</td>
+    <td class="titulo">{{tarefa.titulo}}</td>
+    <p class="desc">{{tarefa.desc}} <button class="apagar" (click)="apagar(i)">apagar</button></p>
+    <td class="data">{{tarefa.data}}</td>
+</tr>
+</div>
+
+
